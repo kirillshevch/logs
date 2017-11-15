@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Logs::Engine => "/logs"
+  mount Logs::Engine => '/logs'
 end
