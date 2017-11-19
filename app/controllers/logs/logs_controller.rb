@@ -2,7 +2,10 @@ require_dependency 'logs/application_controller'
 
 module Logs
   class LogsController < ApplicationController
-    def index
-    end
+    include Logs::Concerns::LogsLoader
+
+    def index; end
+
+    def show; end
   end
 end
