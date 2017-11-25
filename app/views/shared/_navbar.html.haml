@@ -1,3 +1,3 @@
 %ul
   - @log_files.each do |log_file|
-    = log_file
+    = link_to log_file, log_file_path(log_file)
