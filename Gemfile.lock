@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     logs (0.1.0)
+      haml-rails (~> 1.0)
       rails (~> 5)
 
 GEM
@@ -174,7 +175,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml-rails (~> 1.0)
   logs!
   pry-byebug (~> 3.5)
   rspec-rails (~> 3.7.1)
