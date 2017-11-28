@@ -1,9 +1,12 @@
-= "Pages: " + (@logs.each_line.count / 50).to_s
-= "Lines per page: 50"
+= "Pages: #{@pages}"
+= "Lines per page: #{@per_page}"
 %ul
-  %li
-    Last
+  - if @pages != @page
+    %li
+      = link_to 'Last', log_file_path(log_file) + "?page=#@pages"
+
   %li
     Render here up to 10 pages
-  %li
-    First
+  - if @page != 1
+    %li
+      = link_to 'First', log_file_path(log_file)
