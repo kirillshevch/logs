@@ -15,8 +15,11 @@ module Logs
           @per_page = (params[:per_page] || PER_PAGE).to_i
           @page = (params[:page] || PAGE).to_i
           file_name = params[:name] || Rails.env
+
           range = (@page - 1) * @per_page..@per_page * @page - 1
+
           @rendered_logs = Logs::Viewer.call(file_name).readlines[range].join
+
           @pages = @logs.each_line.count / @per_page
         end
       end

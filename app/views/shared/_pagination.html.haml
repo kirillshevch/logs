@@ -1,12 +1,7 @@
-= "Pages: #{@pages}"
-= "Lines per page: #{@per_page}"
-%ul
-  - if @pages != @page
-    %li
-      = link_to 'Last', log_file_path(log_file) + "?page=#@pages"
-
-  %li
-    Render here up to 10 pages
-  - if @page != 1
-    %li
-      = link_to 'First', log_file_path(log_file)
+= I18n.t('logs.pages') + @pages.to_s
+= I18n.t('logs.lines_per_page') + @per_page.to_s
+= I18n.t('logs.all_pages')
+%div
+  - @pages.times do |i|
+    - page = i + 1
+    = link_to page, log_file_path(log_file) + "?page=#{page}"

@@ -1,6 +1,7 @@
 module Logs
   class Engine < ::Rails::Engine
     require 'haml-rails'
+    require 'rake'
 
     isolate_namespace Logs
 

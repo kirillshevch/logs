@@ -1,0 +1,11 @@
+%ul
+  - if @pages != @page
+    %li
+      = link_to I18n.t('logs.last'), log_file_path(log_file) + "?page=#{@pages}"
+  %li
+    - @pages.times do |i|
+      - page = i + 1
+      = link_to page, log_file_path(log_file) + "?page=#{page}"
+    - if @page != 1
+      %li
+        = link_to I18n.t('logs.first'), log_file_path(log_file)

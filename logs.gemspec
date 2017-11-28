@@ -21,4 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rubocop', '~> 0.51'
   s.add_development_dependency 'pry-byebug', '~> 3.5'
   s.add_development_dependency 'rspec-rails', '~> 3.7.1'
+  s.add_development_dependency 'capybara', '~> 2.16'
+  s.add_development_dependency 'rake', '~> 12.3'
+  #s.add_development_dependency 'capybara-webkit', '~> 1.14'
 end

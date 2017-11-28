@@ -1,3 +1,3 @@
 %h1
-  = "Log file: " + log_file
-  = "Lines: " + lines(@logs)
+  = I18n.t('logs.log_file') + log_file
+  = I18n.t('logs.lines') + lines(@logs)

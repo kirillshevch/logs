@@ -4,6 +4,11 @@ require File.expand_path('../dummy/config/environment', __FILE__)
 
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
+require 'capybara/rails'
+require 'capybara/rspec'
+require 'byebug'
+
+Capybara.javascript_driver = :webkit
 
 ActiveRecord::Migration.maintain_test_schema!
 
