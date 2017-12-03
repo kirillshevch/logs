@@ -1,4 +1,4 @@
 %div
-  = @rendered_logs.each_line.with_index do |log_line|
+  - @rendered_logs.each_line do |log_line|
     %div
-      = "#{log_line}
+      = log_line
