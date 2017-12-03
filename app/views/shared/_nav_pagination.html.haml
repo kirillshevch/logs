@@ -1,0 +1,43 @@
+%ul
+  - if @page != 1
+    %li
+      = link_to I18n.t('logs.first'), log_file_path(log_file)
+  %li
+    %ul
+      - count = 0
+      - rendered = @page - 10
+      - @pages.times do |i|
+        - break if count == 10
+        - if @page < 10
+          - page = i + 1
+        - elsif @page != 1 && @page > 10
+          - page = i - 1
+        - else
+          - page = i
+        - if @page < 10
+          %li
+            - if page == @page
+              = page
+            - else
+              = link_to page, log_file_path(log_file) + "?page=#{page}"
+          - rendered = rendered + 1
+          - count =  count + 1
+        - elsif @page < 10 && rendered < 0
+          %li
+            - if page != @page
+              = link_to page, log_file_path(log_file) + "?page=#{page}"
+            - else
+              = page
+          - rendered = rendered + 1
+          - count = count + 1
+        - elsif (rendered < @page) && (i >= @page)
+          %li
+            - if page != @page
+              = link_to page, log_file_path(log_file) + "?page=#{page}"
+            - else
+              = page
+          - rendered = rendered + 1
+          - count = count + 1
+    - if @pages != @page && @pages > 10
+      %li
+        = link_to I18n.t('logs.last'), log_file_path(log_file) + "?page=#{@pages}"

@@ -1,3 +1,4 @@
 %div
-  = @logs.each_line do |log_line|
-    = "<div>#{log_line}</div><br />".html_safe
+  - @rendered_logs.each_line do |log_line|
+    %div
+      = log_line

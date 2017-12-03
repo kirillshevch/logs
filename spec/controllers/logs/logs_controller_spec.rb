@@ -10,7 +10,7 @@ describe Logs::LogsController, type: :controller do
 
   describe 'GET index' do
     it 'should return 200' do
-      get :show, { name: :test }
+      get :show, params: { name: 'test' }
       expect(response).to have_http_status(:ok)
     end
   end

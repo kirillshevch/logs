@@ -7,5 +7,9 @@ module Logs
     def log_file_path(log_name)
       root_path + log_name
     end
+
+    def lines(file)
+      file.each_line.count.to_s
+    end
   end
 end
