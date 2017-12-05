@@ -1,7 +1,6 @@
 module Logs
   class Engine < ::Rails::Engine
-    require 'haml-rails'
-    require 'rake'
+    %w[haml-rails rake].each { |f| require f }
 
     isolate_namespace Logs
 
