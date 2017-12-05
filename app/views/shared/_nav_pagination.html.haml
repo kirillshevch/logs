@@ -8,9 +8,7 @@
       - rendered = @page - 10
       - @pages.times do |i|
         - break if count == 10
-        - if (@pages - @page) < 10
-          - page = i + 1
-        - elsif @page < 10
+        - if (@pages - @page) < 10 || @page < 10
           - page = i + 1
         - elsif @page != 1 && @page > 10
           - page = i - 1
