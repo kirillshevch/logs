@@ -1,0 +1,11 @@
+body {
+  padding: 10px 50px 50px 50px;
+}
+
+.nav--inline {
+  display: inline-flex;
+}
+
+.all-pages {
+  margin-top: 17px;
+}
