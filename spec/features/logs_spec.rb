@@ -13,7 +13,6 @@ feature 'Logs', type: :feature do
       visit logs.root_path
 
       expect(page).to have_content I18n.t('logs.pages')
-      expect(page).to have_content I18n.t('logs.lines_per_page')
       expect(page).to have_content I18n.t('logs.last')
 
       expect(page).not_to have_content I18n.t('logs.first')
@@ -23,7 +22,6 @@ feature 'Logs', type: :feature do
       visit logs.root_path(page: 2)
 
       expect(page).to have_content I18n.t('logs.pages')
-      expect(page).to have_content I18n.t('logs.lines_per_page')
       expect(page).to have_content I18n.t('logs.last')
 
       expect(page).to have_content I18n.t('logs.first')
@@ -35,7 +33,6 @@ feature 'Logs', type: :feature do
       click_link I18n.t('logs.last')
 
       expect(page).to have_content I18n.t('logs.pages')
-      expect(page).to have_content I18n.t('logs.lines_per_page')
       expect(page).to have_content I18n.t('logs.first')
 
       expect(page).not_to have_content I18n.t('logs.last')

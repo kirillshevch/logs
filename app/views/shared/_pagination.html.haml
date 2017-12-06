@@ -1,6 +1,6 @@
-= I18n.t('logs.pages') + @pages.to_s
-= I18n.t('logs.lines_per_page') + @per_page.to_s
-= I18n.t('logs.all_pages')
+.row.all-pages
+  %h6
+    = I18n.t('logs.all_pages')
 %div
   - @pages.times do |i|
     - page = i + 1

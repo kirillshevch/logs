@@ -1,3 +1,8 @@
-%h1
-  = I18n.t('logs.log_file') + log_file
-  = I18n.t('logs.lines') + lines(@logs)
+.nav
+  %h5.nav-logo
+    = I18n.t('logs.log_file') + log_file
+  .nav-logo
+    %p
+      = I18n.t('logs.lines') + lines(@logs)
+    %p
+      = I18n.t('logs.pages') + @pages.to_s
