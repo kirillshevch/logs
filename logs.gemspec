@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Kirill Shevchenko']
   s.email       = ['hello@kirillshevch.com']
   s.homepage    = 'https://github.com/kirillshevch/logs'
-  s.summary     = 'Mountable Rails Engine to see paginated logs from browser'
+  s.summary     = 'Mountable Rails Engine for viewing paginated logs from a browser'
   s.description = s.summary
   s.license     = 'MIT'
 
