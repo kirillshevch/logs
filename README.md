@@ -1,8 +1,6 @@
 # Logs
 Mountable Rails Engine to see paginated logs from browser
 
-![Logs](https://github.com/kirillshevch/logs/blob/master/demo.jpg "Logs")
-
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -25,6 +23,8 @@ end
 ```
 
 Look up on `/logs` route.
+
+![Logs](https://github.com/kirillshevch/logs/blob/master/demo.jpg "Logs")
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
