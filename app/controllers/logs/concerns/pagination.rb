@@ -20,7 +20,12 @@ module Logs
 
           @rendered_logs = Logs::Viewer.call(file_name).readlines[range].join
 
-          @pages = @logs.each_line.count / @per_page
+          @pages = calculate_pages.to_i
+        end
+
+        def calculate_pages
+          float_count = @logs.each_line.count.to_f / @per_page.to_f
+          float_count != float_count.round ? float_count + 1 : float_count
         end
       end
     end
