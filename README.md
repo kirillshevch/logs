@@ -1,7 +1,7 @@
 # Logs
 Mountable Rails Engine to see paginated logs from browser
 
-![Logs](https://github.com/kirillshevch/logs/demo.jpg "Logs")
+![Logs](https://github.com/kirillshevch/logs/blob/master/demo.jpg "Logs")
 
 ## Installation
 Add this line to your application's Gemfile:
