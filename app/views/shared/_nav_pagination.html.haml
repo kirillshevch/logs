@@ -10,6 +10,6 @@
       - else
         = page
 
-  - if last_range != (pages_range[0]..pages_range.last)
+  - if last_range != (pages_range[0]..pages_range.last) && @pages > 10
     .nav-item
       = link_to I18n.t('logs.last'), log_file_path(log_file) + "?page=#{@pages}"
