@@ -1,5 +1,5 @@
 # Logs
-Mountable Rails Engine to see paginated logs from browser
+Mountable Rails Engine for viewing paginated logs from a browser
 
 ## Installation
 Add this line to your application's Gemfile:

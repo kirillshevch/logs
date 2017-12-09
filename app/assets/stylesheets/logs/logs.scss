@@ -1,0 +1,25 @@
+body {
+  padding: 10px 50px 50px 50px;
+}
+
+.nav--inline {
+  display: inline-flex;
+}
+
+.all-pages {
+  margin-top: 17px;
+}
+
+@media (max-width: 1024px) {
+  .nav-logo p {
+    font-size: 30px;
+  }
+
+  .nav h5 {
+    font-size: 60px;
+  }
+
+  .nav-pagination {
+    font-size: 32px;
+  }
+}
