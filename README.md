@@ -1,4 +1,6 @@
 # Logs
+[![Gem Version](https://badge.fury.io/rb/logs.svg)](https://badge.fury.io/rb/logs)
+
 Mountable Rails Engine for viewing paginated logs from a browser
 
 ## Installation
