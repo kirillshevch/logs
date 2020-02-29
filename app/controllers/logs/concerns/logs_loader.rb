@@ -15,7 +15,7 @@ module Logs
         end
 
         def load_logs_list
-          @log_files = Logs::Files.all
+          @log_files = Logs::LogFiles.all
         end
       end
     end
