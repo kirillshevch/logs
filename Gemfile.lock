@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    logs (0.2.5.1)
+    logs (0.3.0)
       haml-rails
       rails (> 5)
 
